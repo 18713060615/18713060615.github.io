@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>乐峰网</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="font-btn/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="shop">
+<!--底部导航-->
+    <nav>
+        <ul class="clearfix">
+            <li><a href="index.html" class="active"><i class="i1"></i><span>特卖</span></a></li>
+            <li><a href="lingquan.html"><i class="i2"></i><span>领券</span></a></li>
+            <li><a href="shop.html" class="active"><i class="i3"></i><span>购物车</span></a></li>
+            <li><a href=""><i class="i4"></i><span>我的蜂巢</span></a></li>
+        </ul>
+    </nav>
+<!--底部导航-->
+<!--登录-->
+    <div class="denglu">
+        <div class="yz">
+            <input type="tetx" placeholder="已验证手机/用户名/邮箱">
+        </div>
+        <div class="dl">
+            <input type="password" placeholder="密码">
+            <a href=""><i class="glyphicon glyphicon-eye-open"></i></a>
+        </div>
+        <i class="i5"></i>
+        <span class="name">一个月内免登录</span>
+        <button class="btn-primary" type="submit">登 录</button>
+        <aside class="linkk">
+        <a href="lijizhuce.html">立即注册</a>
+        <a href="zhaohuimima.html">忘记密码</a>
+        </aside>
+    </div>
+<!--登录-->
+<!--猜您喜欢-->
+<div class="tuijian" id="tj">
+   <h2>猜您喜欢</h2>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6 col-xs-6" v-for="wtc in wtcs">
+                <img :src="wtc.img" alt=""> 
+                <img :src="wtc.img1" alt=""> 
+                <a href=""><span>{{wtc.tcspan}}</span></a>
+                <p>{{wtc.price}}<del>{{wtc.de}}</del></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--猜您喜欢-->
+<!--回到顶部-->
+    <div id="top"></div>
+<!--回到顶部-->
+
+  <script src="js/swiper-4.2.6.min.js"></script>
+   <script src="js/jquery-1.11.1.min.js"></script>
+   <script src="js/timeCountDown.js"></script>
+   <script src="js/vue.js"></script>
+   <script src="js/script.js"></script>
+</body>
+</html>
