@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>领券</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="font-btn/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lq">
+<!--底部导航-->
+    <nav>
+        <ul class="clearfix">
+            <li><a href="index.html"><i class="i1"></i><span>特卖</span></a></li>
+            <li><a href="lingquan.html" class="active"><i class="i2"></i><span>领券</span></a></li>
+            <li><a href="shop.html"><i class="i3"></i><span>购物车</span></a></li>
+            <li><a href=""><i class="i4"></i><span>我的蜂巢</span></a></li>
+        </ul>
+    </nav>
+<!--底部导航-->
+<!--header部分-->
+    <div class="hea">
+        <div class="der">
+            <img src="img/header/header1.jpg" alt="">
+        </div>
+        <div class="der">
+            <img src="img/header/header2.jpg" alt="">
+        </div>
+        <div class="der">
+            <img src="img/header/header3.jpg" alt="">
+        </div>
+        <div class="der">
+            <img src="img/header/header4.jpg" alt="">
+        </div>
+    </div>
+<!--header部分-->
+<!--banner部分-->
+    <div class="banner" id="info">
+      <div class="container">
+              <div class="row text-center">
+                   <div class="col-md-6 col-xs-6" v-for="lhf in lhfs">
+                        <a href="">
+                        <img :src="lhf.img" alt="">
+                        <img :src="lhf.img1" alt="" class="redbag">
+                    </a>
+                    <p class="brandName">{{lhf.fp}}</p>
+                    <div class="promotion-wrap">
+				        <p class="promotion"><span>{{lhf.fhspan}}</span></p> 
+				    </div>
+                    <p class="buy">{{lhf.lfhp}}</p>
+                  </div>
+             </div>    
+      </div>
+    </div>
+<!--banner部分-->
+<!--回到顶部-->
+    <div id="top"></div>
+<!--回到顶部-->
+  <script src="js/swiper-4.2.6.min.js"></script>
+   <script src="js/jquery-1.11.1.min.js"></script>
+   <script src="js/timeCountDown.js"></script>
+   <script src="js/vue.js"></script>
+   <script src="js/script.js"></script>
+</body>
+</html>
