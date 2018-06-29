@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="font-btn/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="overflow:-Scroll;overflow-x:hidden">
+<body class="contact">
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="home-account">
+                        <a href="#">Home</a>
+                        <a href="#">My account</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="cart-info">
+                        <i class="glyphicon glyphicon-shopping-cart"></i>
+                        <a href="#">5 items</a>
+                        <a href="#" class="a1">in your cart</a>
+                        <a href="#">$45.80</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <a href="#"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="main-menu clearfix">
+                        <ul>
+                            <li>
+                            <a href="index.html">Home</a></li>
+                            <li>
+                            <a href="about.html">About</a></li>
+                            <li>
+                            <a href="Products.html">Products</a></li>
+                            <li>
+                            <a href="Contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="input">  
+                        <i class="glyphicon glyphicon-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="products-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading-content">
+                        <h2>Contact Us</h2>
+                        <p>Home / <a href="Contact.html">Contact Us</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="h2 text-center">
+                        <h2>Feel free to send a message</h2>
+                        <img src="img/nav-header/nav-header01.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">  
+                    <div class="message-form">
+                        <form action="#" method="post" class="send-message">
+                            <div class="row">
+                                <div class="name col-md-4">
+                                    <input type="text" name="name" id="name" placeholder="Name">
+                                </div>
+                                <div class="email col-md-4">
+                                    <input type="text" name="email" id="email" placeholder="Email">
+                                </div>
+                                <div class="subject col-md-4">
+                                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                                </div>
+                            </div>
+                            <div class="row">        
+                                <div class="text col-md-12">
+                                    <textarea name="text" placeholder="Message"></textarea>
+                                </div>   
+                            </div>                              
+                            <div class="send">
+                                <button type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info">
+                        <p>Sed dignissim, diam id molestie faucibus, purus nisl pretium quam, in pulvinar velit massa id elit. </p>
+                        <ul>
+                            <li><i class="fa fa-phone"></i>010-020-0340</li>
+                            <li><i class="fa fa-globe"></i>123 Dagon Studio, Yakin Street, Digital Estate</li>
+                            <li><i class="fa fa-envelope"></i><a href="#">info@company.com</a></li>
+                        </ul>
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </div>
+    <div class="contact-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="hh text-center">
+                        <h2>Find Us On Map</h2>
+                        <img src="img/nav-header/nav-header01.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-nav" id="tact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6" v-for="arr in arrs">
+                    <img :src="arr.img" alt=""> 
+                    <h3>{{arr.hf}}</h3>
+                    <span><a href="">{{arr.lhfspan}}</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <div class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="left">
+                            <h2>Get in touch with us</h2>
+                        </div>
+                        <input id="subscribe" type="text" class="iptp">
+                        <input type="submit" id="submitButton" class="bottomoe">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="right clearfix">
+                            <h2>Follow us:</h2>
+                            <ul>
+                                <li>
+                                    <a href="#" class="glyphicon glyphicon-road"> </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="glyphicon glyphicon-check"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="glyphicon glyphicon-calendar"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="about">
+                            <h4 class="footer-title">About Grill</h4>
+                            <p>Grill is free HTML5 website template by templatemo and it is a free responsive bootstrap layout that can be applied for any purpose. 
+                            <br><br>Credit goes to <a rel="nofollow" href="#">Unsplash</a> for photos used in this template. Nam commodo erat quis ligula placerat viverra.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="shop">
+                            <h4 class="footer-title">Shop Categories</h4>
+                            <ul>
+                                <li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>New Grill Menu</a></li>
+                                <li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Healthy Fresh Juices</a></li>
+                                <li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Spicy Delicious Meals</a></li>
+                                <li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Simple Italian Pizzas</a></li>
+                                <li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Pure Good Yogurts</a></li>
+                                <li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Ice-cream for kids</a></li>
+                             </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="posts">
+                            <h4 class="footer-title">Recent posts</h4>
+                        </div>
+                        <div class="posts">
+                            <div class="pos">
+                                <img src="img/main-footer/recent-post1.jpg" alt="">
+                            </div>
+                            <div class="pots">
+                                <h6><a href="#">Delicious and Healthy Menus</a></h6>
+                              <p>18/12/2084</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="more">
+                            <h4 class="footer-title">More info</h4>
+                            <p>Sed dignissim, diam id molestie faucibus, purus nisl pretium quam, in pulvinar velit massa id elit.</p>
+                            <a href="#"><i class="glyphicon glyphicon-earphone"></i>010-020-0340</a>
+                        </div>
+                        <div class="more">
+                             <a href="#"><i class="glyphicon glyphicon-record"></i>123 Dagon Studio, Yakin Street</a>
+                        </div>
+                        <div class="more">
+                            <a href="#"><i class="glyphicon glyphicon-envelope"></i>info@company.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright © 2084 <a href="#"> Collect from </a></p>
+        </div>    
+   <script src="js/swiper-4.2.6.min.js"></script>
+   <script src="js/jquery-1.11.1.min.js"></script>
+   <script src="js/timeCountDown.js"></script>
+   <script src="js/vue.js"></script>
+   <script src="js/script.js"></script>
+</body>
+</html>
