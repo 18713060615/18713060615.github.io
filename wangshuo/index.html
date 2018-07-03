@@ -10,6 +10,20 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="index">
+<!--弹窗效果-->
+<div class="tc">
+    <div class="container">
+        <div class="row">
+           <div class="col-xs-12 ct">
+                <p></p>
+                <span>X</span>
+                <img src="img/b3d413eefac199bb4034c781dce80f9d.jpg" alt="">
+           </div>
+        </div>
+    </div>
+</div>
+<!--弹窗效果-->
+
 <!--底部导航-->
     <nav>
         <ul class="clearfix">
@@ -93,29 +107,45 @@
 <!--滑动轮播-->
 <!--main部分-->
 <div class="main">
-    <div class="mn">
-        <a href="http://w.lefeng.com/brand/800104920?m=brand&amp;brand_id=800104920"><img src="img/main/main01.jpg" alt=""></a>
-    </div>
-    <div class="mn">
-        <a href="http://w.lefeng.com/brand/800105780?m=brand&amp;brand_id=800105780"><img src="img/main/main02.jpg" alt=""></a>
-    </div>
-    <div class="mn">
-        <a href="http://w.lefeng.com/brand/800104920?m=brand&amp;brand_id=800104920"><img src="img/main/main03.jpg" alt=""></a>
-    </div>
-    <div class="mn">
-        <a href="http://w.lefeng.com/brand/800105780?m=brand&amp;brand_id=800105780"><img src="img/main/main04.jpg" alt=""></a>
-    </div>
-    <div class="mn">
-        <a href="http://w.lefeng.com/brand/800104920?m=brand&amp;brand_id=800104920"><img src="img/main/main05.jpg" alt=""></a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="img/main/main01.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img src="img/main/main02.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img src="img/main/main03.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img src="img/main/main04.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img src="img/main/main05.jpg" alt="">
+            </div>
+        </div>
     </div>
 </div>
 <div class="title text-center">
     <span>品牌专场</span>
 </div>
 <div class="mai" id="nm">
-    <div class="mm" v-for="arr in arrs">
-        <a href=""><img :src="arr.img" alt=""></a>
-        <span><a href="">{{arr.lgx}}</a>{{arr.lgxspan}}</span>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mm" v-for="arr in arrs">
+                <a href=""><img :src="arr.img" alt=""></a>
+                <span><a href="">{{arr.lgx}}</a>{{arr.lgxspan}}</span>
+            </div>
+        </div>
     </div>
 </div>
 <div class="jx text-center">

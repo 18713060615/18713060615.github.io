@@ -128,6 +128,16 @@ if(document.querySelector("#top")!=null){
         })
 }
 
+//抽奖效果
+var fc=document.querySelector(".ct span");
+var cf=document.querySelector(".tc");
+fc.onclick=function(){
+    cf.style.display="none";
+}
+//弹窗效果
 
 
-//分享效果
+
+
+
+//弹窗效果
