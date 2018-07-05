@@ -465,145 +465,306 @@ button[type=submit] {
 
 /*蜂巢header代码*/
 .fc{
-    background: #f6f6f6;
+    background-color: #f6f6f6;
 }
-.fc .bg{
-    z-index: 1;
+.container .avatar{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 85px;
+    height: 85px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    background-image: url(../img/yonghu/logo.png);
+    margin-top: -3px;
+}
+.container .dz{
+    position: absolute;
+    left: 125px;
+    top: 30px;
+    font-size: 16px;
+    margin-top: -12px;
+}
+.container .bg{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 90px;
+    height: 100px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50%;
     background-image: url(../img/yonghu/bg.png);
     transform: translateZ(0);
 }
-.left{
-    float: left;
+.order .container.co1{
+    background-color: #fff;
+    border-top: 1px solid rgba(0,0,0,.06);
+    position: relative;
+    top: 100px;
+    left: 0;
+    height: 52px;
+    padding: 15px 0px;
 }
-.bg>.left>img{
-    width: 60px;
-    height: 60px;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-.fc .bg>.left>a {
-    z-index: 2;
-    color: #333;
-    text-decoration: none;
-}
-.name1{
-    font-size: 12px;
-    position: fixed;
-    left: 85px;
-    top: 30px;
-}
-.container .order .dd{
+.order .container a{
+    padding-right: 50px;
     color: #000;
-    position: absolute;
-    top: 95px;
-    left: 15px;
 }
-.tab .order::after{
-    display: table;
-    content: "";
-    clear: both;
+.order .container .tx{
+    padding-left: 55px;
 }
-.tab .order .txt{
-    color: #000;
-    position: absolute;
-    top: 95px;
-    right: 20px;
+.order .container i{
+    color: #ccc;
 }
-.tab .order .glyphicon{
-    color: #919191;
-    position: absolute;
-    top: 97px;
-    right: 4px;
+.order-tab{
+    background-color: #fff;
+    border-top: 1px solid rgba(0,0,0,.06);
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 70px;
 }
-
-.tab .container .ip img{
+.order-tab img{
     width: 45px;
     height: 45px;
-}
-.tab .container .ip .ii1{
-    margin-top: 25px;
-    margin-left: -253px;
-    width: 40px;
-    height: 40px;
-}
-.tab .container .ip .aa1{
-    margin-left: -253px;
-    color:#000;
-}
-.tab .container .ip .ii2{
-    margin-top: -110px;
-    width: 40px;
-    height: 40px;
-}
-.tab .container .ip .aa2{
     position: relative;
-    top: -40px;
-    color:#000;
+    top:  -58px;
+    margin: 0px 60px;
 }
-.tab .container .ip .ii3{
-    margin-top: -188px;
-    margin-left: 250px;
-    width: 40px;
-    height: 40px;
-}
-.tab .container .ip .aa3{
+.order-tab .div1 img{
+    width: 45px;
+    height: 45px;
     position: relative;
-    top: -80px;
-    left: 130px;
-    color:#000;
+    top: -82px;
+    left: -20px;
 }
-.ban::after{
-    display: table;
-    content: "";
-    clear: both;
+.order-tab .div1 p{
+    position: relative;
+    top: -90px;
+    left: 27px;
 }
-.ban{
-    margin-top: -66px;
+.order-tab .div2 img{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    top: -44px;
+    left: 0px;
 }
-.ban .txt{
-    float: right;
-    font-size: 14px;
-    margin-right: -2px;
-    color: #666;
-    margin-top: 2px;
+.order-tab .div2 p{
+    position: relative;
+    top: -50px;
+    left: 48px;
 }
-.ban .img-icon{
-    float: left;
+.order-tab .div3 img{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    top: -62px;
+    left: 15px;
 }
-.ban img{
-    width: 30px;
-    height: 30px;
+.order-tab .div3 p{
+    position: relative;
+    top: -70px;
+    left: 63px;
 }
-.ban .container{
-    background: #fff;
+.order-tab .col-xs-3{
+    padding-top: 25px;
+}
+.ldiv{
+    background-color: #fff;
+    border-top: 10px solid rgba(0,0,0,.06);
+    position: relative;
+    top: 100px;
     width: 100%;
-    margin-top: 5px;
+    height: 55px;
 }
-.tai{
-    margin-top: 10px;
+.ldiv img{
+    width: 28px;
+    height: 28px;
+    position: relative;
+    top: 5px;
+    right: 270px;
 }
-.tai .container{
-    background: #fff;
+.ldiv p{
+    position: relative;
+    top: -16px;
+    right: 190px;
+}
+.ldiv a{
+    color: #000;
+    position: relative;
+    top: -46px;
+    right: 15px;
+}
+.ldiv i{
+    color: #ccc;
+    position: relative;
+    top: -44px;
+    right: 12px;
+}
+.ldiv1{
+    background-color: #fff;
+    border-top: 10px solid rgba(0,0,0,.06);
+    position: relative;
+    top: 100px;
     width: 100%;
-    margin-top: 4px;
+    height: 100px;
 }
-.ta
-{
-    margin-top: 10px;
+.ldiv1 img{
+    width: 28px;
+    height: 28px;
+    position: relative;
+    top: 5px;
+    right: 270px;
+}
+.ldiv1 p{
+    position: relative;
+    top: -16px;
+    right: 90px;
+}
+.ldiv1 i{
+    color: #ccc;
+    position: relative;
+    top: -51px;
+    right: -138px;
+}
+.ldiv1 .ik{
+    background-color: #fff;
+    border-top: 1px solid rgba(0,0,0,.06);
+    position: relative;
+    top: -34px;
+    width: 100%;
+    height: 50px;
+}
+.ldiv1 .ik img{
+    width: 28px;
+    height: 28px;
+    position: relative;
+    top: 8px;
+    right: 135px;
+}
+.ldiv1 .ik p{
+    position: relative;
+    top: -16px;
+    right: 57px;
+}
+.ldiv1 .ik i{
+    color: #ccc;
+    position: relative;
+    top: -51px;
+    right: -138px;
+}
+.ldiv2{
+    background-color: #fff;
+    border-top: 10px solid rgba(0,0,0,.06);
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 55px;
+}
+.ldiv2 img{
+    width: 28px;
+    height: 28px;
+    position: relative;
+    top: 5px;
+    right: 140px;
+}
+.ldiv2 p{
+    position: relative;
+    top: -24px;
+    right: 57px;
+}
+.ldiv2 i{
+    color: #ccc;
+    position: relative;
+    top: -51px;
+    right: -138px;
+}
+.ldiv2 .ik{
+    background-color: #fff;
+    border-top: 1px solid rgba(0,0,0,.06);
+    position: relative;
+    top: -42px;
+    width: 100%;
+    height: 50px;
+}
+.ldiv2 .ik img{
+    width: 28px;
+    height: 28px;
+    position: relative;
+    top: 8px;
+    right: 140px;
+}
+.ldiv2 .ik p{
+    position: relative;
+    top: -20px;
+    left: -57px;
+}
+.ldiv2 .ik i{
+    color: #ccc;
+    position: relative;
+    top: -51px;
+    right: -138px;
+}
+.ldiv3{
+    background-color: #fff;
+    border-top: 10px solid rgba(0,0,0,.06);
+    position: relative;
+    top: 130px;
+    width: 100%;
+    height: 60px;
+}
+.ldiv3 img{
+    width: 28px;
+    height: 28px;
+    position: relative;
+    top: 5px;
+    right: 140px;
+}
+.ldiv3 p{
+    position: relative;
+    top: -19px;
+    right: 57px;
+}
+.ldiv3 i{
+    color: #ccc;
+    position: relative;
+    top: -51px;
+    right: -138px;
+}
+.ldiv3 .ik{
+    background-color: #fff;
+    border-top: 1px solid rgba(0,0,0,.06);
+    position: relative;
+    top: -42px;
+    width: 100%;
+    height: 43px;
+}
+.ldiv3 .ik img{
+    width: 28px;
+    height: 28px;
+    position: relative;
+    top: 8px;
+    right: 140px;
+}
+.ldiv3 .ik p{
+    position: relative;
+    top:-14px;
+    right: 57px;
+}
+.ldiv3 .ik i{
+    color: #ccc;
+    position: relative;
+    top: -51px;
+    right: -138px;
+}
+.jingxuan{
+    margin-top: 260px;
 }
 /*蜂巢header的代码*/
-/*为你推荐部分*/
-.oo h1{
-    font-size: 22px;  
-}
-/*为你推荐部分*/
-
-
-
 
 
 /*footer部分*/
