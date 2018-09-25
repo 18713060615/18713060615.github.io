@@ -1,0 +1,104 @@
+.wrap{
+    width: 80%;
+    margin:10px auto;
+    height: 400px;
+}
+.container{
+    width:143px;
+    height: 140px;
+    overflow: hidden; /* BFC*/
+    transition: all .3s;
+    margin-left:20px;
+    margin-top: 20px;
+    /*animation: heartRun 4s; */   /* 溜达一圈再回来*/
+    animation: heartGo 1.2s;   /*心动1.2秒*/
+    animation-iteration-count:2;  /*我要皮两下*/
+    /*animation-fill-mode: forwards; */  
+    animation-delay:1s;
+}
+.left,.right{
+    width:80px;
+    height:80px;
+    background-color: pink;
+    border-radius: 50%;
+    float:left;
+    /*box-shadow: 2px 2px 3px #e9e9e9; */
+}
+
+.left{
+    margin-right:-20px;
+}
+.right{
+    background-color: pink;
+}
+.right > .text{
+    color:#fff;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: 40px;
+    left: -8px;
+    z-index: 2;
+}
+.floor{
+    width:80px;
+    height:80px;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: pink;
+    transform: rotate(45deg);
+    /*box-shadow: 2px 2px 3px #e9e9e9; */
+}
+.container:hover{
+    transform: scale(1.2);
+    animation-play-state:paused;  /*抓住我就停下来*/
+}
+/*皮一下就好*/
+@keyframes heartRun {
+    0%{
+        margin-left:20px;
+        margin-top: 20px;
+    }
+    35%{
+        margin-left: calc(100% - 160px);
+        margin-top:20px;
+    }
+    50%{
+        margin-left: calc(100% - 160px);
+        margin-top:240px;
+        transform: rotate(90deg);
+    }
+    85%{
+        margin-left: 20px;
+        margin-top:240px;
+        transform: rotate(180deg);
+    }
+    100%{
+        margin-left:20px;
+        margin-top: 20px;
+    }
+}
+/*心动的感觉*/
+@keyframes heartGo{
+    0%{
+        transform: scale(1);
+    }
+    16%{
+        transform: scale(1.3);
+    }
+    33%{
+        transform: scale(1);
+    }
+    49%{
+        transform: scale(1.3);
+    }
+    66%{
+        transform: scale(1);
+    }
+    83%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}    
